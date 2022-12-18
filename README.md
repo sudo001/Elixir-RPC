@@ -13,7 +13,7 @@
 </p>
 
 <div align="center">
-  <h3 align="center"><samp> 1. Clone this repo (git clone https://github.com/sudo001/Elixir) or download it.</samp></h3>
+  <h3 align="center"><samp> 1. Clone this repo (git clone https://github.com/sudo001/Elixir-RPC) or download it.</samp></h3>
   <h3 align="center"><samp> 2. Install needed requirements.</samp></h3>
   <h3 align="center"><samp> 3. Run Elixir.py</samp></h3>
   <h3 align="center"><samp> 4. Enjoy </samp></h3>
