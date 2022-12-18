@@ -7,6 +7,9 @@ from colorama import Fore
 
 cursor.hide()
 
+class etc:
+    version = "1.0.1"
+
 def clear():
     if os.name == "nt":
         os.system("cls")
@@ -70,7 +73,7 @@ def wizard():
     "Show Time": true,
     "Buttons": [
         {
-            "label": "Get Elixir", "url": "https://github.com/sudo001/Elixir"
+            "label": "Get Elixir", "url": "https://github.com/sudo001/Elixir-RPC"
         },
         {
             "label": "Google Ong", "url": "https://google.com"
@@ -79,6 +82,10 @@ def wizard():
 }"""
         file = open("Configs/elixir.json", "w").write(pattern)
         printing.success("Configs/elixir.json created successfully")
+        printing.success("Press ENTER to launch Elixir")
+        input()
+    
+        os.system("python3 Elixir.py")
 
 wizard()
 class rpc:
@@ -127,7 +134,7 @@ class rpc:
 def menu():
     clear()
     resize(36, 81)
-    title("Elixir")
+    title(f"Elixir - {etc.version}")
     print(Fore.MAGENTA + Center.XCenter(art.ascii) + "\n\n")
     print("─"*os.get_terminal_size().columns + "\n")
     print(art.options)
